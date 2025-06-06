@@ -19,7 +19,7 @@
     return !("function" == typeof e && "number" != typeof e.nodeType && "function" != typeof e.item) && !(null != e && e === e.window) && ("array" === n || 0 === t || "number" == typeof t && t > 0 && t - 1 in e);
   }
   function a(e, t) {
-    return t ? "" === e ? "�" : e.slice(0, -1) + "\\" + e.charCodeAt(e.length - 1).toString(16) + " " : "\\" + e;
+    return t ? "" === e ? " " : e.slice(0, -1) + "\\" + e.charCodeAt(e.length - 1).toString(16) + " " : "\\" + e;
   }
   function s(e, t, n) {
     return "function" == typeof t && "number" != typeof t.nodeType && "function" != typeof t.item ? Te.grep(e, function (e, i) {
